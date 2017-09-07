@@ -22,17 +22,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- jQuery CDN -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 
 	<!-- Bootstrap CDN -->
-	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	
 
 	<!-- Font Awesome Bootstrap CDN -->
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 
 
 	<!--JS CDN -->
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<!-- <script type="text/javascript" src="assets/javascript/game.js"></script> -->
 
 
 
@@ -42,31 +43,66 @@
 	<div class = "container-fluid">
 		<h1 class="text-center">The Anbu Mask Game</h1>
 
-		<button class="btn btn-block btn-primary">
-			Like
-		</button>
-		
-		<div>
-			<p>Text goes here</p>
+		<div class="row">
+			<div class="col-xs-8 col-md-8">
+					<p><span class="host"><strong>Minato</strong></span> will give you a random number at the start of the game.</p>
+
+					<p>There are four Anbu masks below. By clicking ona mask you will add a specific amount of points to your total score.</p>
+
+					<p>You win the game by <span class="text-danger">matching</span> your total score to the random number, you lose the game if your total score goes <span class="text-danger">above</span> the random number.</p>
+
+					<p>The value of each Anbu mask is hidden from you until you click on it.</p>
+
+					<p>When the game restarts, the game will change the values of each Anbu mask.</p>
+			</div>
+			
+			<div class="col-xs-4 col-md-4">
+				<img id="host" src="assets/images/minato.png" class="img-responsive" alt="Minato">
+			</div>			
 		</div>
 		
-
-<img src="https://bit.ly/fcc-running-cats" class="img-responsive" alt="Three kittens running towards the camera. ">
 
 
 		<div class="row">
-			<div class="col-xs-4">
-				<button class="btn btn-block btn-primary"><i class="fa-thumbs-up fa fa-info-circle">Like</i></button>
+			<div class="col-xs-1 col-md-1 ">
+				<img class="mask center-block img-responsive" src="assets/images/anbuKakashi.png" alt="Kakashi">
 			</div>
 			
-			<div class="col-xs-4">
-				<button class="btn btn-block btn-info">Info</button>
+			<div class="col-xs-1 col-md-1">
+				<img class="mask center-block img-responsive" src="assets/images/anbuMenma.png" alt="Menma">
 			</div>
 
-			<div class="col-xs-4">
-				<button class="btn btn-block btn-danger">Delete</button>
+			<div class="col-xs-1 col-md-1">
+				<img class="mask center-block img-responsive" src="assets/images/anbuRin.png" alt="Rin">
+			</div>
+
+			<div class="col-xs-1 col-md-1">
+				<img class="mask center-block img-responsive" src="assets/images/anbuMadara.png" alt="Madara">
+			</div>
+
+			<div class="col-xs-4 col-md-4">
+				<h3 class="text-center">Your number: <span class="userTotal">0</span></h3>
+			</div>
+
+			<div class="col-xs-4 col-md-4">
+				<h3><span class="text-center host">Minato's</span> Number: <span class="userTotal text-center">??</span></h3>
 			</div>
 		</div>
+
+
+		<div class="row">
+			<div class="col-xs-4 col-md-4">
+			</div>
+
+			<div class="col-xs-4 col-md-4">
+				<h3 class="text-center">Wins: </span class="winCount">0</h3></h3>
+			</div>
+
+			<div class="col-xs-4 col-md-4">
+				<h3><span class="text-center">Losses: </span class="lossCount">0</h3>
+			</div>
+		</div>
+
 	</div>
 	<!-- class = "container-fluid" -->
 </body>

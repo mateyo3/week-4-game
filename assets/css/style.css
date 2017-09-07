@@ -2,6 +2,14 @@ h1 {
 	font-family: 'Kalam', cursive;
 }
 
-body {
-	background-image: url(assets/images/background.jpg);
+
+.mask {
+	width: auto;
+	height: 150px;
 }
+
+
+#host {
+	width: 300px;
+}
+
