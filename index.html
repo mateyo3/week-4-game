@@ -42,12 +42,12 @@
 
 </head>
 <body>
-	<div class = "container-fluid">
-		<h1 class="text-center">The Anbu Mask Game</h1>
+	<div class = "view full-bg-img flex-center container-fluid">
+		<h1 class="text-center h1-responsive">The Anbu Mask Game</h1>
 
 		<div class="row">
-			<div class="col-xs-8 col-md-8">
-					<p><strong><span class="hostName">Minato</span></strong> will give you a random number at the start of the game.</p>
+			<div class="col-xs-4 col-md-4 instructions" id="instructions">
+					<p><strong><span class="host-name">Minato</span></strong> will give you a random number at the start of the game.</p>
 
 					<p>There are four Anbu masks below. By clicking ona mask you will add a specific amount of points to your total score.</p>
 
@@ -57,10 +57,13 @@
 
 					<p>When the game restarts, the game will change the values of each Anbu mask.</p>
 			</div>
+
+			<div class="col-xs-4 col-md-4">
+			</div>
 			
 			<div class="col-xs-4 col-md-4">
 				<span>
-					<img src="assets/images/minato.png" id="hostImage" class="img-responsive" alt="Minato">
+					<img src="assets/images/minato.png" class="img-responsive hostImage" alt="Minato">
 				</span>
 			</div>			
 		</div>
@@ -97,7 +100,7 @@
 			</div>
 
 			<div class="col-xs-4 col-md-4">
-				<h3><span class="text-center hostName">Minato</span>'s Number: <span class="hostNumber text-center">??</span></h3>
+				<h3><span class="text-center host-name">Minato</span>'s Number: <span class="hostNumber text-center">??</span></h3>
 			</div>
 		</div>
 
