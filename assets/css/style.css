@@ -16,7 +16,10 @@ h1 {
 	font-family: 'Kalam', cursive;
 }
 
+p {
+	margin-top: 22px;
 
+}
 .mask {
 	width: auto;
 	height: 150px;

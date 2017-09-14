@@ -78,86 +78,63 @@ $(document).ready(function() {
 		console.log("mask4 value: " + maskFourValue);
 
 	//onclick function to mask1
-	$("#mask1").on("click", function() {
-  		console.log("mask1 clicked");
-		//onclick adds value to yourNumber
+	$("#mask1, #mask2, #mask3, #mask4").on("click", function() {
+  		console.log("mask clicked");
+		
+		//convert value to integer
 		maskOneValue = parseInt(maskOneValue);
-    		console.log(maskOneValue);
-    	playerTotal += maskOneValue;
-    		console.log("new player total: " + playerTotal);
-    	$(".userTotal").text(playerTotal);
-	});
-
-
-
-//onclick function to mask2
-	$("#mask2").on("click", function() {
-  			console.log("mask2 clicked");
-  		//onclick adds value to yourNumber
     	maskTwoValue = parseInt(maskTwoValue);
-    		console.log(maskTwoValue);
-    	playerTotal += maskTwoValue;
+    	maskThreeValue = parseInt(maskThreeValue);
+    	maskFourValue = parseInt(maskFourValue);
+    	
+    	//onclick adds value to yourNumber
+    	playerTotal += maskOneValue || maskTwoValue || maskThreeValue || maskFourValue;
     		console.log("new player total: " + playerTotal);
     	$(".userTotal").text(playerTotal);
-
 	});
 
-
-//onclick function to mask3
-	$("#mask3").on("click", function() {
-  		console.log("mask3 clicked");
-  		//onclick adds value to yourNumber
-  		maskThreeValue = parseInt(maskThreeValue);
-    		console.log(maskThreeValue);
-    	playerTotal += maskThreeValue;
-    		console.log("new player total: " + playerTotal);
-    	$(".userTotal").text(playerTotal);
-
-	});
-
-
-//onclick function to mask4
-	$("#mask4").on("click", function() {
- 		 console.log("mask4 clicked");
- 		 //onclick adds value to yourNumber
- 		 maskFourValue = parseInt(maskFourValue);
-    		console.log(maskFourValue);
-		playerTotal += maskFourValue;
-    		console.log("new player total: " + playerTotal);
-    	$(".userTotal").text(playerTotal);
-
-	});
-
-
-	
-
-//if yourNumber === hostNumber, then winCount ++
-//reset game
-	    if (playerTotal === hostNumber){
+    	if (playerTotal === hostNumber){
     		console.log("You Win!")
     	winCount++;
     		console.log(winCount);
     	$(".winCount").text(winCount);
     	}
 
-    	else if (playerTotal >= hostNumber) {
+    	if (playerTotal >= hostNumber) {
     		console.log("You lose!")
     	lossCount++;
     		console.log(lossCount);
     	$(".lossCount").text(lossCount);
-
     	}
+
+
+
+//if yourNumber === hostNumber, then winCount ++
+// //reset game
+// 	    if (playerTotal === hostNumber){
+//     		console.log("You Win!")
+//     	winCount++;
+//     		console.log(winCount);
+//     	$(".winCount").text(winCount);
+//     	// reset();
+//     	}
+
+//     	else if (playerTotal >= hostNumber) {
+//     		console.log("You lose!")
+//     	lossCount++;
+//     		console.log(lossCount);
+//     	$(".lossCount").text(lossCount);
+//     	// reset();
+//     	}
 
 //if yourNumber > hostNumber, then lossCount ++
 //reset game
 
 
-
-
 //display yourNumber total in HTML
 
 	//reset
-	// $(function(reset) {
+	// function reset() {
 	// //computer randomly picks host
 	// var host = hostArray[Math.floor(Math.random() * hostArray.length)];
 	// 	console.log(host)
@@ -180,7 +157,7 @@ $(document).ready(function() {
 
 	// var maskFourValue = Math.floor(Math.random() *12) + 2;
 	// 	console.log("mask4 value: " + maskFourValue);
-	// });
+	// }
 
 
 
