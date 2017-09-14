@@ -180,6 +180,7 @@ $(document).ready(function() {
     	lossCount++;
     		console.log(lossCount);
     	$(".lossCount").text(lossCount);
+    	//reset game
     	}
     	
     	//if yourNumber === hostNumber, then winCount ++
@@ -188,6 +189,7 @@ $(document).ready(function() {
     	winCount++;
     		console.log(winCount);
     	$(".winCount").text(winCount);
+    	//reset game
     	}
 
 	});
@@ -196,43 +198,6 @@ $(document).ready(function() {
 	
 
 
-//reset game
-
-
-
-
-//reset game
-
-
-
-
-//display yourNumber total in HTML
-
-	//reset
-	// $(function(reset) {
-	// //computer randomly picks host
-	// var host = hostArray[Math.floor(Math.random() * hostArray.length)];
-	// 	console.log(host)
-	// //display host name in HTML .hostName
-	// 	$("#host-name").html(host);
-	// //randomly generate hostNumber between 50-125
-	// var hostNumber = Math.floor(Math.random() *125) + 50;
-	// //display hostNumber in HTML.hostNumber
-	// $(".hostNumber").text(hostNumber);
-	// console.log(hostNumber);
-	// //randomly assign value to masks, 1 through 12
-	// var maskOneValue = Math.floor(Math.random() *12) + 2;
-	// 	console.log("mask1 value: " + maskOneValue);
-
-	// var maskTwoValue = Math.floor(Math.random() *12) + 2;
-	// 	console.log("mask2 value: " + maskTwoValue);
-
-	// var maskThreeValue = Math.floor(Math.random() *12) + 2;
-	// 	console.log("mask3 value: " + maskThreeValue);
-
-	// var maskFourValue = Math.floor(Math.random() *12) + 2;
-	// 	console.log("mask4 value: " + maskFourValue);
-	// });
 
 
 
