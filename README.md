@@ -4,6 +4,8 @@ Based on the Crystal Game (week-4-game)
 ## Functionality
 When the application begins the computer randomly chooses a host character from an array. Each host image is connected to their name, which changes in the DOM.
 
+The host character gets assigned a random number between 50 and 125.
+
 Each Anbu mask is randomly assigned a value from 2-12. The user clicks on each mask to add to their total. 
 
 If the user matches the host's number, then the wins total increases by one. If the user's total is greater than the host's number the loss total increases by one.
@@ -25,8 +27,11 @@ In the Terminal:
 ## Built With
 HTML, CSS, Bootstrap. Javascript, JQuery
 
-## Authors
+## Author
 Mateo Reyes
+
+##Artwork
+Marinha
 
 ## License
 &copy; 2017 Mateo Reyes

@@ -86,6 +86,22 @@ $(document).ready(function() {
     	playerTotal += maskOneValue;
     		console.log("new player total: " + playerTotal);
     	$(".userTotal").text(playerTotal);
+
+    	//if yourNumber > hostNumber, then lossCount ++
+    	if (playerTotal > hostNumber) {
+    		console.log("You lose!")
+    	lossCount++;
+    		console.log(lossCount);
+    	$(".lossCount").text(lossCount);
+    	}
+
+		//if yourNumber === hostNumber, then winCount ++
+		if (playerTotal === hostNumber){
+    		console.log("You Win!")
+    	winCount++;
+    		console.log(winCount);
+    	$(".winCount").text(winCount);
+    	}
 	});
 
 
@@ -100,6 +116,22 @@ $(document).ready(function() {
     		console.log("new player total: " + playerTotal);
     	$(".userTotal").text(playerTotal);
 
+    	//if yourNumber > hostNumber, then lossCount ++
+    	if (playerTotal > hostNumber) {
+    		console.log("You lose!")
+    	lossCount++;
+    		console.log(lossCount);
+    	$(".lossCount").text(lossCount);
+    	}
+
+		//if yourNumber === hostNumber, then winCount ++
+		if (playerTotal === hostNumber){
+    		console.log("You Win!")
+    	winCount++;
+    		console.log(winCount);
+    	$(".winCount").text(winCount);
+    	}
+
 	});
 
 
@@ -112,6 +144,22 @@ $(document).ready(function() {
     	playerTotal += maskThreeValue;
     		console.log("new player total: " + playerTotal);
     	$(".userTotal").text(playerTotal);
+
+		//if yourNumber > hostNumber, then lossCount ++
+    	if (playerTotal > hostNumber) {
+    		console.log("You lose!")
+    	lossCount++;
+    		console.log(lossCount);
+    	$(".lossCount").text(lossCount);
+    	}
+
+		//if yourNumber === hostNumber, then winCount ++
+		if (playerTotal === hostNumber){
+    		console.log("You Win!")
+    	winCount++;
+    		console.log(winCount);
+    	$(".winCount").text(winCount);
+    	}
 
 	});
 
@@ -126,29 +174,33 @@ $(document).ready(function() {
     		console.log("new player total: " + playerTotal);
     	$(".userTotal").text(playerTotal);
 
-	});
-
-
-	
-
-//if yourNumber === hostNumber, then winCount ++
-//reset game
-	    if (playerTotal === hostNumber){
+		//if yourNumber > hostNumber, then lossCount ++
+    	if (playerTotal > hostNumber) {
+    		console.log("You lose!")
+    	lossCount++;
+    		console.log(lossCount);
+    	$(".lossCount").text(lossCount);
+    	}
+    	
+    	//if yourNumber === hostNumber, then winCount ++
+		if (playerTotal === hostNumber){
     		console.log("You Win!")
     	winCount++;
     		console.log(winCount);
     	$(".winCount").text(winCount);
     	}
 
-    	else if (playerTotal >= hostNumber) {
-    		console.log("You lose!")
-    	lossCount++;
-    		console.log(lossCount);
-    	$(".lossCount").text(lossCount);
+	});
 
-    	}
 
-//if yourNumber > hostNumber, then lossCount ++
+	
+
+
+//reset game
+
+
+
+
 //reset game
 
 
