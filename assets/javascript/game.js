@@ -11,13 +11,10 @@ var winCount = 0;
 //host name array
 var hostArray = ["Minato", "Kakashi", "Naruto", "Sasuke", "Sakura"];
 
-// var hostImage = [
-// 	"assets/image/minato.png",
-// 	"assets/image/kakashi1.png",
-// 	"assets/image/naruto1.png",
-// 	"assets/image/sasuke1.png",
-// 	"assets/image/sakura1.png",
-// ]
+//results image
+// $("assets/images/naruto2.png").hide();
+// $("assets/images/naruto2.png").show();
+
 
 $(document).ready(function() {
 
@@ -110,6 +107,7 @@ $(document).ready(function() {
 	    	//reset game
 	    	reload();
 	    	$(".userTotal").text("You Lose!");
+
 	    	}
 
 			//if yourNumber === hostNumber, then winCount ++

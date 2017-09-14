@@ -10,10 +10,14 @@ Each Anbu mask is randomly assigned a value from 2-12. The user clicks on each m
 
 If the user matches the host's number, then the wins total increases by one. If the user's total is greater than the host's number the loss total increases by one.
 
+## Bugs
+After one round, the mask value gets doubled
+
 ## Getting Started
 Below are instructions on how to clone this repository.
 
-### Cloning
+
+## Cloning
 Click the Clone or download button to copy the URL
 
 In the Terminal:
